@@ -1,0 +1,38 @@
+requirements_analysis_task:
+  description: >
+    Analyze a comprehensive description of a Python application in {description},
+    identifying all functional requirements, user experience goals,
+    and special features. Utilize structured thinking to document
+    these elements clearly and in detail. Assess essential functionalities for a successful Python interface, including user interactions and data processing needs, to create a requirements report.
+  expected_output: >
+    A detailed requirements document in markdown format that outlines all features, functionalities, and user experience goals for the Python application, serving as a development blueprint.
+  priority: 1
+
+python_development_task:
+  description: >
+    Develop the full Python application based on the detailed requirements.
+    This includes creating backend logic as well as integrating user interface components.
+    Write clean, efficient, and well-documented code that fulfills all specified functionalities. Employ best practices in coding and modularization, ensuring the application is scalable, maintainable, and runs smoothly.
+  expected_output: >
+    A comprehensive Python application housed in a file named app.py. The file should contain all code necessary for the application’s operations and user interfaces, ensuring it meets the outlined requirements and user interaction goals.
+  priority: 2
+
+testing_and_quality_assurance_task:
+  description: >
+    Thoroughly test the Python application to uncover any bugs or performance issues. Review the complete code for quality assurance and adherence to coding standards. Provide detailed feedback for improvements and validate that the application meets high-quality standards across all functionalities.
+  expected_output: >
+    A review report detailing all testing procedures, discovered issues, and recommended enhancements. Include a code review document providing constructive feedback to enhance application quality and performance.
+
+code_refactoring:
+  description: >
+    Rewrite the code in app.py fixing all the issues stated in the code_review file and implementing
+    all the improvement points.
+  expected_output: >
+    A reviewed version of app.py.
+
+documentation_creation_task:
+  description: >
+    Produce comprehensive and user-friendly documentation for the Python application, including setup instructions, feature overviews, and user tutorials. Make the application easily understandable and usable for end-users, ensuring documentation is informative for both technical and non-technical audiences.
+  expected_output: >
+    A README file containing a setup guide, feature descriptions, and user tutorials,
+    formatted to be clear and concise, facilitating an engaging and informative user experience.
